@@ -4,7 +4,7 @@ package com.nd.aoue.producer.bean;
 public class ElectData {
 
     private String cand_nm;  // 候选人名字
-    private String contbr_nm;  // 投票人名字
+    private String contbr_nm;//投票人名字
     private String contbr_st;  // 投票人所在州
     private String contbr_employer;  // 投票人的雇佣者
     private String contbr_occupation;  // 投票人职业
@@ -24,7 +24,7 @@ public class ElectData {
 
     @Override
     public String toString() {
-        return  cand_nm + ',' + contbr_nm + ',' + contbr_st + ',' +
+        return  cand_nm + ',' + contbr_nm + ','  + contbr_st + ',' +
                 contbr_employer + ',' + contbr_occupation + ',' +
                 contb_receipt_amt + ',' + contb_receipt_dt + '\t';
     }
