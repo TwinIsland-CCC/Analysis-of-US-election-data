@@ -3,6 +3,7 @@ package com.nd.aoue.common.bean;
 import com.nd.aoue.common.constant.Names;
 import com.nd.aoue.common.constant.ValueConstant;
 import com.nd.aoue.common.util.DateUtil;
+import org.apache.commons.lang.ObjectUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.*;
 import org.apache.hadoop.hbase.client.*;

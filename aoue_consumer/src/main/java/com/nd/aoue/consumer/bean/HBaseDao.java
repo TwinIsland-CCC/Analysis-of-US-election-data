@@ -8,6 +8,8 @@ import org.apache.hadoop.hbase.util.Bytes;
 
 import java.io.IOException;
 
+import static com.nd.aoue.common.util.CSVUtil.split;
+
 /**
  * HBase存储数据用，实现消费
  */
@@ -18,14 +20,14 @@ public class HBaseDao extends BaseHBaseDao {
         createNamespaceNX(Names.NAMESPACE.getValue());
         createTableXX(Names.TABLE.getValue(),
                 ValueConstant.REGION_COUNT,
-                Names.CF_CALLER.getValue());
+                Names.CF_CAND.getValue());
         end();  // 结束
     }
 
     public void insertData(String value) throws IOException {
         //将通话日志保存到HBase表中
         //1.获取通话日志数据
-        String[] values = value.split("\t");
+        String[] values = split(value);
         String cand_nm=values[0];  // 候选人名字
         String contbr_nm=values[1];  // 投票人名字
         String contbr_st=values[2];  // 投票人所在州
@@ -50,7 +52,7 @@ public class HBaseDao extends BaseHBaseDao {
         String rowKey=genRegionNum(contbr_nm,contb_receipt_dt)+"_"+contbr_nm.substring(0,3)+"_"
                 +contbr_st+"_"+getcontbr_occupation(contbr_occupation)+"_"+contb_receipt_dt;
         Put put=new Put(Bytes.toBytes(rowKey));
-        byte[] family=Bytes.toBytes(Names.CF_CALLER.getValue());
+        byte[] family=Bytes.toBytes(Names.CF_CAND.getValue());
         //增加列
         put.addColumn(family,Bytes.toBytes("cand_nm"),Bytes.toBytes(cand_nm));
         put.addColumn(family,Bytes.toBytes("contbr_nm"),Bytes.toBytes(contbr_nm));
