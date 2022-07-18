@@ -1,40 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="aoue_producer:jar" />
-    </artifacts-to-build>
-  </component>
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ee6e8c2-0b45-48bf-9edd-d0b9bdf82b50" name="变更" comment="消费部分到协助理器前（未测试）">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/18856.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_consumer/src/main/resources/consumer.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_consumer/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/Names.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/Names.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/target/aoue_common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/aoue_common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/bean/BaseHBaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/bean/BaseHBaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/constant/Names.class" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/constant/Names.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    <list default="true" id="16b6e634-6a92-4d11-b896-fdee09a4f03f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/aoue_producer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/aoue_producer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/aoue_producer/target/" />
+    <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/aoue_consumer/target/" />
+    <ignored path="$PROJECT_DIR$/aoue_producer/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/aoue_common/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,78 +15,34 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/BootStrap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="35" column="106" selection-start-line="35" selection-start-column="106" selection-end-line="35" selection-end-column="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/CSVUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/DataOut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-638">
-              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataOut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-747">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="682">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -122,68 +50,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="132" selection-start-line="132" selection-end-line="132" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/Bootstrap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="704">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/Bootstrap.java" />
         <option value="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java" />
-        <option value="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectData.java" />
-        <option value="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/Names.java" />
-        <option value="$PROJECT_DIR$/aoue_common/pom.xml" />
-        <option value="$PROJECT_DIR$/aoue_producer/src/main/resources/to.java" />
-        <option value="$PROJECT_DIR$/aoue_consumer/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java" />
-        <option value="$PROJECT_DIR$/aoue_consumer/src/main/resources/consumer.properties" />
-        <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
+        <option value="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/BootStrap.java" />
         <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" />
+        <option value="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java" />
+        <option value="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/CSVUtil.java" />
+        <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -231,11 +128,6 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="aoue_consumer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="aoue_producer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -248,30 +140,23 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="58" />
-    <option name="width" value="705" />
-    <option name="height" value="1014" />
-  </component>
-  <component name="ProjectId" id="2C4gZ5JbB1wfdv9Vm0SXfCtgQLA" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <option name="x" value="54" />
+    <option name="width" value="708" />
+    <option name="height" value="1018" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
@@ -457,54 +342,25 @@
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
-              <item name="aoue_producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ct_project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_consumer\src\main\java\com\nd\aoue\comsumer\bean" />
-      <recent name="D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\IO" />
-      <recent name="D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean" />
-      <recent name="D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_common\src\main\java\com\nd\aoue\common\util" />
-      <recent name="D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_common\src\main\java\com\nd\aoue\common\constant" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.nd.aoue.comsumer" />
-      <recent name="com.nd.aoue.producer" />
-      <recent name="com.nd.aoue.common.bean" />
-    </key>
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -518,9 +374,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Bootstrap (1)">
-    <configuration name="Bootstrap (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.aoue.consumer.Bootstrap" />
+  <component name="RunManager" selected="Application.BootStrap">
+    <configuration name="BootStrap" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.aoue.consumer.BootStrap" />
       <module name="aoue_consumer" />
       <extension name="coverage">
         <pattern>
@@ -545,379 +401,282 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.BootStrap" />
+      <item itemvalue="Application.Bootstrap" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Bootstrap (1)" />
+        <item itemvalue="Application.BootStrap" />
         <item itemvalue="Application.Bootstrap" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
-    <configuration>C:\Users\18856\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="默认任务">
-      <changelist id="1ee6e8c2-0b45-48bf-9edd-d0b9bdf82b50" name="变更" comment="" />
-      <created>1658067323909</created>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16b6e634-6a92-4d11-b896-fdee09a4f03f" name="Default Changelist" comment="" />
+      <created>1658194517335</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1658067323909</updated>
-      <workItem from="1658115628666" duration="11428000" />
-      <workItem from="1658136335510" duration="562000" />
-      <workItem from="1658136930986" duration="2071000" />
-      <workItem from="1658139182001" duration="6785000" />
+      <updated>1658194517335</updated>
+      <workItem from="1658194520571" duration="3044000" />
+      <workItem from="1658198340620" duration="941000" />
+      <workItem from="1658202213549" duration="1543000" />
+      <workItem from="1658203795982" duration="8094000" />
+      <workItem from="1658215327518" duration="52000" />
     </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1658112802163</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1658112802163</updated>
-    </task>
-    <task id="LOCAL-00002" summary="消费部分到协助理器前（未测试）">
-      <created>1658129476892</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1658129476893</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20846000" />
+    <option name="totallyTimeSpent" value="13674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.21300597" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.3299712" />
-      <window_info anchor="bottom" id="Java Enterprise" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3299712" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.22478387" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.39913544" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Database" order="2" weight="0.3297943" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Bean Validation" order="5" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.19840743" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21167883" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36887607" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42363113" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3299712" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3299712" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3299712" />
+      <window_info anchor="bottom" id="ExcelReader" order="14" weight="0.3314121" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.05109489" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="test" />
-    <MESSAGE value="消费部分到协助理器前（未测试）" />
-    <option name="LAST_COMMIT_MESSAGE" value="消费部分到协助理器前（未测试）" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java">
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/resources/hbase-site.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data_part.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/Producer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-742">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectAllData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2084">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data_out.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/soft/jdk/jdk/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="433" selection-start-line="433" selection-end-line="433" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/ValueConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1350">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/resources/to.java" />
-    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="100" column="39" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/Names.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
+        <state relative-caret-position="-1518" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/resources/consumer.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/resources/hbase-site.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-573" />
-      </provider>
-    </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/zookeeper/zookeeper/3.6.3/zookeeper-3.6.3.jar!/org/apache/zookeeper/ClientCnxn.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="769" selection-start-line="769" selection-end-line="769" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/zookeeper/zookeeper/3.6.3/zookeeper-3.6.3.jar!/org/apache/zookeeper/ClientCnxnSocketNIO.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="266" selection-start-line="266" selection-end-line="266" />
-          <folding>
-            <element signature="e#0#11136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/RpcRetryingCallable.class">
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/clients/consumer/internals/NoOpConsumerRebalanceListener.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-common/2.3.7/hbase-common-2.3.7.jar!/org/apache/hadoop/hbase/TableName.class">
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/clients/consumer/internals/SubscriptionState.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="280" selection-start-line="280" selection-end-line="280" />
+        <state relative-caret-position="124">
+          <caret line="296" selection-start-line="296" selection-end-line="296" />
           <folding>
-            <element signature="e#5834#5835#0" expanded="true" />
-            <element signature="e#5874#5875#0" expanded="true" />
+            <element signature="e#12906#12907#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/Admin.class">
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/clients/consumer/internals/Fetcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="172" selection-start-line="172" selection-end-line="172" />
+        <state relative-caret-position="107">
+          <caret line="1183" selection-start-line="1183" selection-end-line="1183" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/HBaseAdmin.class">
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/common/utils/Utils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="1729" selection-start-line="1729" selection-end-line="1729" />
+        <state relative-caret-position="107">
+          <caret line="388" selection-start-line="388" selection-end-line="388" />
           <folding>
-            <element signature="e#23305#23532#0" expanded="true" />
-            <element signature="e#23531#23532#0" expanded="true" />
+            <element signature="e#34751#34752#0" expanded="true" />
+            <element signature="e#34809#34810#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/common/utils/SystemTime.class">
+    <entry file="jar://E:/mymean/java/maven/rep/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar!/org/slf4j/helpers/MessageFormatter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="107">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/common/utils/LogContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="627" selection-start-line="627" selection-end-line="627" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/common/internals/PartitionStates.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
-            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/common/utils/Time.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/common/utils/Timer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#1623#1624#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
-            <element signature="e#1802#1803#0" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/clients/consumer/internals/KafkaConsumerMetrics.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/ConnectionImplementation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="1515" selection-start-line="1515" selection-end-line="1515" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
         </state>
       </provider>
     </entry>
     <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/clients/consumer/KafkaConsumer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="385" selection-start-line="385" selection-end-line="385" />
+        <state relative-caret-position="107">
+          <caret line="297" selection-start-line="297" selection-end-line="297" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hadoop/hadoop-common/2.10.0/hadoop-common-2.10.0.jar!/org/apache/hadoop/conf/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="252" selection-start-line="252" selection-end-line="252" />
           <folding>
-            <element signature="e#20121#20122#0" expanded="true" />
+            <element signature="e#11022#11023#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/clients/consumer/ConsumerRecords.class">
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7-sources.jar!/org/apache/hadoop/hbase/client/ConnectionFactory.java" />
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7-sources.jar!/org/apache/hadoop/hbase/client/ConnectionImplementation.java" />
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7-sources.jar!/org/apache/hadoop/hbase/client/HBaseAdmin.java" />
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-common/2.3.7/hbase-common-2.3.7.jar!/org/apache/hadoop/hbase/util/Bytes.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="60">
+          <caret line="360" selection-start-line="360" selection-end-line="360" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/common/utils/AbstractIterator.class">
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/Mutation.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="44">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/mymean/java/maven/rep/org/apache/kafka/kafka-clients/3.0.1/kafka-clients-3.0.1.jar!/org/apache/kafka/clients/consumer/ConsumerRecord.class">
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/Put.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="44">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
           <folding>
-            <element signature="e#3639#3640#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data_part.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data_out.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data_out1.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectAllData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#2011#2012#0" expanded="true" />
+            <element signature="e#2049#2050#0" expanded="true" />
+            <element signature="e#2159#2160#0" expanded="true" />
+            <element signature="e#2197#2198#0" expanded="true" />
+            <element signature="e#2307#2308#0" expanded="true" />
+            <element signature="e#2345#2346#0" expanded="true" />
+            <element signature="e#2463#2464#0" expanded="true" />
+            <element signature="e#2505#2506#0" expanded="true" />
+            <element signature="e#2631#2632#0" expanded="true" />
+            <element signature="e#2677#2678#0" expanded="true" />
+            <element signature="e#2795#2796#0" expanded="true" />
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#2959#2960#0" expanded="true" />
+            <element signature="e#3003#3004#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
+            <element signature="e#3199#3200#0" expanded="true" />
+            <element signature="e#3349#3350#0" expanded="true" />
+            <element signature="e#3407#3408#0" expanded="true" />
+            <element signature="e#3557#3558#0" expanded="true" />
+            <element signature="e#3615#3616#0" expanded="true" />
+            <element signature="e#3761#3762#0" expanded="true" />
+            <element signature="e#3817#3818#0" expanded="true" />
+            <element signature="e#3947#3948#0" expanded="true" />
+            <element signature="e#3995#3996#0" expanded="true" />
+            <element signature="e#4105#4106#0" expanded="true" />
+            <element signature="e#4143#4144#0" expanded="true" />
+            <element signature="e#4261#4262#0" expanded="true" />
+            <element signature="e#4303#4304#0" expanded="true" />
+            <element signature="e#4413#4414#0" expanded="true" />
+            <element signature="e#4451#4452#0" expanded="true" />
+            <element signature="e#4565#4566#0" expanded="true" />
+            <element signature="e#4605#4606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -928,84 +687,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectData.java">
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        <state relative-caret-position="261">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java">
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-common/2.3.7/hbase-common-2.3.7.jar!/org/apache/hadoop/hbase/HBaseConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        <state relative-caret-position="124">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataOut.java">
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/ConnectionFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-747">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="124">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/Names.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#519#520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-common/2.3.7/hbase-common-2.3.7.jar!/org/apache/hadoop/hbase/TableName.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="280" selection-start-line="280" selection-end-line="280" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/Admin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/HBaseAdmin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="1729" selection-start-line="1729" selection-end-line="1729" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/ConnectionImplementation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="1515" selection-start-line="1515" selection-end-line="1515" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/CSVUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="236">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/BootStrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="682">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="248">
+          <caret line="35" column="106" selection-start-line="35" selection-start-column="106" selection-end-line="35" selection-end-column="106" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArquillianSettingsConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>aoue_producer:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1046,7 +831,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>aoue_consumer</last-edited>
+          <last-edited>aoue_common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1057,18 +842,19 @@
           </splitter-proportions>
         </settings>
       </state>
-      <state key="ProjectLibrariesConfigurable.UI">
+      <state key="ProjectJDKs.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.17819461" />
               </list>
             </option>
           </splitter-proportions>
         </settings>
       </state>
-      <state key="ScopeChooserConfigurable.UI">
+      <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

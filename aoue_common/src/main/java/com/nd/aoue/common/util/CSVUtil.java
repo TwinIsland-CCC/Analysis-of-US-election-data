@@ -24,7 +24,7 @@ public class CSVUtil {
 
             String p1 = line.substring(start, end);
             list.add(p1);
-            System.out.println(p1);
+            //System.out.println(p1);
         } while (end < line.length() - 1);
         return list.toArray(new String[0]);
     }

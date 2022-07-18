@@ -6,6 +6,7 @@ import com.nd.aoue.common.constant.ValueConstant;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 
+import javax.validation.constraints.Null;
 import java.io.IOException;
 
 import static com.nd.aoue.common.util.CSVUtil.split;
@@ -28,13 +29,23 @@ public class HBaseDao extends BaseHBaseDao {
         //将通话日志保存到HBase表中
         //1.获取通话日志数据
         String[] values = split(value);
-        String cand_nm=values[0];  // 候选人名字
-        String contbr_nm=values[1];  // 投票人名字
-        String contbr_st=values[2];  // 投票人所在州
-        String contbr_employer=values[3];  // 投票人的雇佣者
-        String contbr_occupation=values[4];  // 投票人职业
+        String cand_nm=values[0].substring(1,values[0].length()-1);  // 候选人名字
+        String contbr_nm=values[1].substring(1,values[1].length()-1);  // 投票人名字
+        String contbr_st=values[2].substring(1,values[2].length()-1);  // 投票人所在州
+        String contbr_employer=new String();
+        if(values[3].length() != 0){
+            contbr_employer = values[3].substring(1,values[3].length()-1);  // 投票人的雇佣者
+        }else{
+            contbr_employer = "NULL";
+        }
+        String contbr_occupation = new String();
+        if(values[4].length() != 0){
+            contbr_occupation=values[4].substring(1,values[4].length()-1);  // 投票人职业
+        }else{
+            contbr_occupation="NULL";
+        }
         String contb_receipt_amt=values[5];  // 投票人捐赠金额
-        String contb_receipt_dt=values[6];  // 投票日期
+        String contb_receipt_dt=values[6].substring(0,values[6].length()-1);  //  捐赠日期
         //2.创建数据对象
     /*
        rowKey设计
@@ -48,9 +59,8 @@ public class HBaseDao extends BaseHBaseDao {
                       15623513131=>13131532651
             计算分区号:让分区号没有规律就可以,hashMap
     */
-        //rowKey=(4+6)+3+2+3+6
-        String rowKey=genRegionNum(contbr_nm,contb_receipt_dt)+"_"+contbr_nm.substring(0,3)+"_"
-                +contbr_st+"_"+getcontbr_occupation(contbr_occupation)+"_"+contb_receipt_dt;
+        String rowKey=genRegionNum(contbr_nm,cand_nm)+"_"+contbr_nm+"_"
+                +contbr_st+"_"+contbr_occupation+"_"+contb_receipt_dt;
         Put put=new Put(Bytes.toBytes(rowKey));
         byte[] family=Bytes.toBytes(Names.CF_CAND.getValue());
         //增加列
