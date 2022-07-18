@@ -194,25 +194,38 @@ public abstract class BaseHBaseDao {
 
     /**
      * 计算分区号
-     * @param tel
+     * @param nm
      * @param date
      * @return
      */
-    protected static int genRegionNum(String tel,String date){
-        //15623513131,取后四位没有规律的
-        String userCode=tel.substring(tel.length()-4);
-        //20220707120000,获取年月
-        String yearMonth=date.substring(0,6);
+    protected static int genRegionNum(String nm,String date){
+        //取捐献人姓名前4位
+        String nameCode=nm.substring(0,4);
+        //110620,获取年月
+        String yearMonth=date;
         //实现散列
-        int userCodeHash=userCode.hashCode();
+        int nameCodeHash=nameCode.hashCode();
         int yearMonthHash=yearMonth.hashCode();
         //crc校验采用异或算法
-        int crc=Math.abs(userCodeHash^yearMonthHash);
+        int crc=Math.abs(nameCodeHash^yearMonthHash);
         //取模
         int regionNum=crc% ValueConstant.REGION_COUNT;
         return regionNum;
     }
 
+    protected static String getcontbr_occupation(String contbr_occupation){
+        String occupation;
+        if(contbr_occupation.length() >= 3){
+            occupation = contbr_occupation.substring(0,3);
+        } else if(contbr_occupation.length() == 2){
+            occupation = contbr_occupation + "A";
+        }else if(contbr_occupation.length() == 1){
+            occupation = contbr_occupation + "AA";
+        }else{
+            occupation = "NON";
+        }
+        return occupation;
+    }
     /**
      * 删除表
      * @param name
