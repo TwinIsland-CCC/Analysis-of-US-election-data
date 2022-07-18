@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ee6e8c2-0b45-48bf-9edd-d0b9bdf82b50" name="变更" comment="消费部分到协助理器前（未测试）">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/dictionaries/18856.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/aoue_consumer/src/main/resources/consumer.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/aoue_consumer/src/main/resources/log4j.properties" afterDir="false" />
@@ -31,6 +32,12 @@
       <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectData.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectData.java" afterDir="false" />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/aoue_producer/target/" />
@@ -43,6 +50,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -88,6 +96,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
               <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+=======
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
             </state>
           </provider>
         </entry>
@@ -95,12 +116,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectData.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-638">
+=======
+            <state relative-caret-position="-514">
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
               <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,11 +150,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="122">
               <caret line="132" selection-start-line="132" selection-end-line="132" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="224" column="31" selection-start-line="224" selection-start-column="31" selection-end-line="224" selection-end-column="31" />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -145,6 +179,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+=======
+        <entry file="file://$PROJECT_DIR$/data/data_out.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
             </state>
           </provider>
         </entry>
@@ -174,6 +214,7 @@
       <list>
         <option value="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java" />
         <option value="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectData.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/Names.java" />
         <option value="$PROJECT_DIR$/aoue_common/pom.xml" />
         <option value="$PROJECT_DIR$/aoue_producer/src/main/resources/to.java" />
@@ -182,10 +223,15 @@
         <option value="$PROJECT_DIR$/aoue_consumer/src/main/resources/consumer.properties" />
         <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java" />
         <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" />
+=======
+        <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" />
+        <option value="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java" />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
+<<<<<<< HEAD
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="E:\mymean\java\maven\rep" />
@@ -193,6 +239,8 @@
         <option name="userSettingsFile" value="D:\soft\apache-maven-3.6.1\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+=======
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -201,6 +249,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
+<<<<<<< HEAD
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -244,13 +293,22 @@
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
+=======
+      <expand />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="58" />
     <option name="width" value="705" />
     <option name="height" value="1014" />
+=======
+    <option name="x" value="61" />
+    <option name="width" value="701" />
+    <option name="height" value="1011" />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
   </component>
   <component name="ProjectId" id="2C4gZ5JbB1wfdv9Vm0SXfCtgQLA" />
   <component name="ProjectLevelVcsManager">
@@ -261,6 +319,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,11 +334,14 @@
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
               <item name="aoue_common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -341,6 +407,7 @@
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="aoue_common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -349,6 +416,8 @@
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
               <item name="aoue_consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -394,6 +463,7 @@
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="aoue_consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -402,6 +472,8 @@
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
               <item name="aoue_producer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -457,6 +529,7 @@
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="aoue_producer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -465,14 +538,19 @@
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -518,6 +596,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Bootstrap (1)">
     <configuration name="Bootstrap (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nd.aoue.consumer.Bootstrap" />
@@ -532,6 +611,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="RunManager">
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
     <configuration name="Bootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nd.aoue.producer.Bootstrap" />
       <module name="aoue_producer" />
@@ -547,14 +629,21 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Application.Bootstrap (1)" />
+=======
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
         <item itemvalue="Application.Bootstrap" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
+<<<<<<< HEAD
     <configuration>C:\Users\18856\AppData\Roaming\Subversion</configuration>
+=======
+    <configuration />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -563,10 +652,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658067323909</updated>
+<<<<<<< HEAD
       <workItem from="1658115628666" duration="11428000" />
       <workItem from="1658136335510" duration="562000" />
       <workItem from="1658136930986" duration="2071000" />
       <workItem from="1658139182001" duration="6785000" />
+=======
+      <workItem from="1658115628666" duration="6008000" />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1658112802163</created>
@@ -586,12 +679,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="20846000" />
+=======
+    <option name="totallyTimeSpent" value="6008000" />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
@@ -623,6 +721,39 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+=======
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24950232" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3299712" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" weight="0.3297943" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+>>>>>>> 9152e192febf12fcc3abc7b0e06db71c2241246a
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1069,6 +1200,168 @@
         </settings>
       </state>
       <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data_part.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/DataOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-280">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-742">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectAllData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2084">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data_out.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-514">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="224" column="31" selection-start-line="224" selection-start-column="31" selection-end-line="224" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>aoue_common</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
