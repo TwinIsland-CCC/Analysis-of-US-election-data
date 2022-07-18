@@ -26,10 +26,13 @@ public class HBaseDao extends BaseHBaseDao {
         //将通话日志保存到HBase表中
         //1.获取通话日志数据
         String[] values = value.split("\t");
-        String call1=values[0];
-        String call2=values[1];
-        String calltime=values[2];
-        String duration=values[3];
+        String cand_nm=values[0];  // 候选人名字
+        String contbr_nm=values[1];  // 投票人名字
+        String contbr_st=values[2];  // 投票人所在州
+        String contbr_employer=values[3];  // 投票人的雇佣者
+        String contbr_occupation=values[4];  // 投票人职业
+        String contb_receipt_amt=values[5];  // 投票人捐赠金额
+        String contb_receipt_dt=values[6];  // 投票日期
         //2.创建数据对象
     /*
        rowKey设计
@@ -43,15 +46,19 @@ public class HBaseDao extends BaseHBaseDao {
                       15623513131=>13131532651
             计算分区号:让分区号没有规律就可以,hashMap
     */
-        //rowKey=regionNum+call1+time+call2+duration
-        String rowKey=genRegionNum(call1,calltime)+"_"+call1+"_"+calltime+"_"+call2+"_"+duration;
+        //rowKey=(4+6)+3+2+3+6
+        String rowKey=genRegionNum(contbr_nm,contb_receipt_dt)+"_"+contbr_nm.substring(0,3)+"_"
+                +contbr_st+"_"+getcontbr_occupation(contbr_occupation)+"_"+contb_receipt_dt;
         Put put=new Put(Bytes.toBytes(rowKey));
         byte[] family=Bytes.toBytes(Names.CF_CALLER.getValue());
         //增加列
-        put.addColumn(family,Bytes.toBytes("call1"),Bytes.toBytes(call1));
-        put.addColumn(family,Bytes.toBytes("call2"),Bytes.toBytes(call2));
-        put.addColumn(family,Bytes.toBytes("calltime"),Bytes.toBytes(calltime));
-        put.addColumn(family,Bytes.toBytes("duration"),Bytes.toBytes(duration));
+        put.addColumn(family,Bytes.toBytes("cand_nm"),Bytes.toBytes(cand_nm));
+        put.addColumn(family,Bytes.toBytes("contbr_nm"),Bytes.toBytes(contbr_nm));
+        put.addColumn(family,Bytes.toBytes("contbr_st"),Bytes.toBytes(contbr_st));
+        put.addColumn(family,Bytes.toBytes("contbr_employer"),Bytes.toBytes(contbr_employer));
+        put.addColumn(family,Bytes.toBytes("contbr_occupation"),Bytes.toBytes(contbr_occupation));
+        put.addColumn(family,Bytes.toBytes("contb_receipt_amt"),Bytes.toBytes(contb_receipt_amt));
+        put.addColumn(family,Bytes.toBytes("contb_receipt_dt"),Bytes.toBytes(contb_receipt_dt));
         //3.保存数据
         putData(Names.TABLE.getValue(),put);
 
