@@ -1,41 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="aoue_producer:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ee6e8c2-0b45-48bf-9edd-d0b9bdf82b50" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/DataIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/DataOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/Val.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/Names.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/ValueConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/CSVUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/NumberUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/resources/hbase-site.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectAllData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/data_01.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/data_all.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/data_out.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/data_part.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/aoue_producer_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aoue_producer/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/aoue_producer.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/flume-2-kafka-aoue.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/aoue_common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/aoue_common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectAllData.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/ElectAllData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/aoue_producer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/aoue_producer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/Bootstrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/ElectAllData.class" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/ElectAllData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/LocalFileProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/LocalFileProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +60,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO" />
-    <property name="project.structure.last.edited" value="模块" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/aoue_common/src/main/resources" />
+    <property name="project.structure.last.edited" value="工件" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

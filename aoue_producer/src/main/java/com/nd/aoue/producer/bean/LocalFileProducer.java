@@ -36,7 +36,7 @@ public class LocalFileProducer implements Producer {
         }*/
 
         int i = 0;
-        while (flg) {
+        while (i < read.size()) {
             ElectAllData inData = read.get(i++);  // 获取主叫电话
 
             //转换日期格式

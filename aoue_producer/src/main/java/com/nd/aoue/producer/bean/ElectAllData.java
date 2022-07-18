@@ -28,7 +28,7 @@ public class ElectAllData extends Data {
     @Override
     public void setValue(Object val) {
         context = (String) val;  // 读取：所有表头
-        System.out.println(val);
+        //System.out.println(val);
         String[] split = CSVUtil.split(context);
         setCmte_id(split[0]);
         setCand_id(split[1]);
