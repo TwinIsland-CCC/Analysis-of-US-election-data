@@ -15,6 +15,9 @@
         <module name="aoue_analyzer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="aoue_analyzer" target="1.8" />
+      <module name="aoue_writesql" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
