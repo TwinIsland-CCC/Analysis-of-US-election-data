@@ -24,8 +24,8 @@ public class Bootstrap {
         producer.setOut(new LocalFileDataOut("D:\\JavaRepos\\Maven\\Analysis-of-US-election-data\\data\\data_out.csv"));
 
         //集群
-        //producer.setIn(new LocalFileDataIn(args[0]));
-        //producer.setOut(new LocalFileDataOut(args[1]));
+/*        producer.setIn(new LocalFileDataIn(args[0]));
+        producer.setOut(new LocalFileDataOut(args[1]));*/
 
         // 生产数据
         producer.produce();
