@@ -11,6 +11,8 @@
     <modules>
         <module>aoue_common</module>
         <module>aoue_producer</module>
+        <module>aoue_web</module>
+        <module>aoue_web</module>
     </modules>
 
     <properties>
