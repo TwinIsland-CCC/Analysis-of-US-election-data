@@ -6,7 +6,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 
-import java.io.IOException;
+import java.io.*;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
@@ -33,6 +33,7 @@ public class CallLogConsumer implements Consumer {
         hBaseDao.init();
 
         //消费数据
+/*
         while (true){
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
             for (ConsumerRecord<String, String> r: records) {
@@ -40,10 +41,20 @@ public class CallLogConsumer implements Consumer {
                 //存储数据到HBase中
                 hBaseDao.insertData(r.value());
             }
-
         }
-
-
+*/
+        //文件读入（调试用）
+        while(true){
+            String filePath = "D:\\JavaRepos\\Maven\\Analysis-of-US-election-data\\data\\data_out.csv";
+            File file=new File(filePath);
+            InputStreamReader in_stream = new InputStreamReader(new FileInputStream(file));
+            BufferedReader in = new BufferedReader(in_stream);
+            String s;
+            while ((s=in.readLine())!=null) {
+                System.out.println(s);
+                hBaseDao.insertData(s);
+            }
+        }
     }
 
     /**

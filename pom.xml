@@ -12,6 +12,8 @@
         <module>aoue_common</module>
         <module>aoue_producer</module>
         <module>aoue_consumer</module>
+        <module>aoue_analyzer</module>
+        <module>aoue_writesql</module>
     </modules>
 
     <properties>
