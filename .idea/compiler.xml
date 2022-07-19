@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="aoue_web" />
-        <module name="aoue_common" />
-        <module name="aoue_writesql" />
         <module name="aoue_consumer" />
+        <module name="aoue_common" />
         <module name="aoue_producer" />
         <module name="aoue_analyzer" />
+        <module name="aoue_writesql" />
+        <module name="aoue_web" />
       </profile>
     </annotationProcessing>
   </component>
