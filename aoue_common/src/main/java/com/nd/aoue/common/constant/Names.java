@@ -7,11 +7,10 @@ import com.nd.aoue.common.bean.Val;
  */
 
 public enum Names implements Val {
-    TOPIC("ct"),  // 主题
-    NAMESPACE("ct"),//命名空间
-    TABLE("ct:calllog"),//通话的日志
-    CF_CALLER("caller"),//列族，主叫
-    CF_CALLEE("callee"),//列族，被叫
+    TOPIC("aoue"),  // 主题
+    NAMESPACE("aoue"),//命名空间
+    TABLE("aoue:data"),//数据
+    CF_CAND("cand"),//候选人
     CF_INFO("info"),//列族
     ;
 

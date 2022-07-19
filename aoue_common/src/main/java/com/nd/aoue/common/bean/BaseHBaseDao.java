@@ -3,6 +3,7 @@ package com.nd.aoue.common.bean;
 import com.nd.aoue.common.constant.Names;
 import com.nd.aoue.common.constant.ValueConstant;
 import com.nd.aoue.common.util.DateUtil;
+import org.apache.commons.lang.ObjectUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.*;
 import org.apache.hadoop.hbase.client.*;
@@ -178,7 +179,7 @@ public abstract class BaseHBaseDao {
         List<byte[]> bsList=new ArrayList<byte[]>();
         for (int i = 0; i < splitKeyCount; i++) {
             String splitKey=i+"|";
-            System.out.println(splitKey);
+            //System.out.println(splitKey);
             bsList.add(Bytes.toBytes(splitKey));
         }
         bsList.toArray(bs);
@@ -194,20 +195,20 @@ public abstract class BaseHBaseDao {
 
     /**
      * 计算分区号
-     * @param tel
-     * @param date
+     * @param contbr_nm
+     * @param cand_nm
      * @return
      */
-    protected static int genRegionNum(String tel,String date){
-        //15623513131,取后四位没有规律的
-        String userCode=tel.substring(tel.length()-4);
-        //20220707120000,获取年月
-        String yearMonth=date.substring(0,6);
+    protected static int genRegionNum(String contbr_nm,String cand_nm){
+        //取捐献人姓名前4位
+        String contbrnameCode=contbr_nm.substring(0,4);
+        //取候选人姓名前4位
+        String candnameCode=cand_nm.substring(0,4);
         //实现散列
-        int userCodeHash=userCode.hashCode();
-        int yearMonthHash=yearMonth.hashCode();
+        int contbrnameCodeHash=contbrnameCode.hashCode();
+        int candnameCodeHash=candnameCode.hashCode();
         //crc校验采用异或算法
-        int crc=Math.abs(userCodeHash^yearMonthHash);
+        int crc=Math.abs(contbrnameCodeHash^candnameCodeHash);
         //取模
         int regionNum=crc% ValueConstant.REGION_COUNT;
         return regionNum;

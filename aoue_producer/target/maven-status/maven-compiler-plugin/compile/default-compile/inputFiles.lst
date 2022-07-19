@@ -1,6 +1,6 @@
-F:\学习资料与作业\实训\项目\项目内容\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\IO\LocalFileDataOut.java
-F:\学习资料与作业\实训\项目\项目内容\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\Bootstrap.java
-F:\学习资料与作业\实训\项目\项目内容\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\IO\LocalFileDataIn.java
-F:\学习资料与作业\实训\项目\项目内容\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\ElectAllData.java
-F:\学习资料与作业\实训\项目\项目内容\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\LocalFileProducer.java
-F:\学习资料与作业\实训\项目\项目内容\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\ElectData.java
+D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\Bootstrap.java
+D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\ElectAllData.java
+D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\IO\LocalFileDataIn.java
+D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\LocalFileProducer.java
+D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\ElectData.java
+D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\IO\LocalFileDataOut.java
