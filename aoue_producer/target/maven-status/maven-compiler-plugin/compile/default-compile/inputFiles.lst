@@ -1,6 +1,6 @@
-D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\Bootstrap.java
-D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\ElectAllData.java
-D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\IO\LocalFileDataIn.java
-D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\LocalFileProducer.java
-D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\ElectData.java
-D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\IO\LocalFileDataOut.java
+D:\hadoop\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\IO\LocalFileDataIn.java
+D:\hadoop\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\Bootstrap.java
+D:\hadoop\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\LocalFileProducer.java
+D:\hadoop\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\ElectAllData.java
+D:\hadoop\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\bean\ElectData.java
+D:\hadoop\Analysis-of-US-election-data\aoue_producer\src\main\java\com\nd\aoue\producer\IO\LocalFileDataOut.java
