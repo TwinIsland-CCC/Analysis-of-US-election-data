@@ -31,6 +31,7 @@ public class ContLogContoller {
         List<ContLog> contLog = contLogService.findContLog(candidate, contDate);
         System.out.println("!contLogs:"+contLog);
         model.addAttribute("contLogs",contLog);
+
         return "view";
     }
 
