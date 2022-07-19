@@ -1,112 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="aoue_producer:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ee6e8c2-0b45-48bf-9edd-d0b9bdf82b50" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/SumAmountAnalysisData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SumAmountMySQLOutputFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/SumAmountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SumAmountReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/SumAmountAnalysisTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/Parties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/JDBCUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_producer/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_writesql/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_writesql/src/main/java/com/nd/auoe/mr/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_writesql/src/main/java/com/nd/auoe/mr/ContactWriteSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_writesql/src/main/java/com/nd/auoe/mr/DateSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_writesql/src/main/java/com/nd/auoe/mr/DateWriteSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_writesql/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="9f1bb247-ed6e-4ea3-9738-a78cc3cf2528" name="变更" comment="添加MapReduce模块：实现了统计总统党派并统计总收到的金额的部分。数据存储在MySql中。ddl见data文件夹下的ddls.sql文件。">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/CSVUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/CSVUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_common/target/aoue_common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/aoue_common-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/util/CSVUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/util/CSVUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_common/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_consumer/target/aoue_consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/target/aoue_consumer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_consumer/target/classes/com/nd/aoue/consumer/bean/CallLogConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/target/classes/com/nd/aoue/consumer/bean/CallLogConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_consumer/target/classes/com/nd/aoue/consumer/bean/HBaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/target/classes/com/nd/aoue/consumer/bean/HBaseDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_consumer/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_producer/target/aoue_producer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/aoue_producer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/Bootstrap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/LocalFileProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/LocalFileProducer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/aoue_producer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/data/aoue_producer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_out.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_out.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/aoue_producer_jar/aoue_producer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/aoue_producer_jar/aoue_producer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/aoue_web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/resources/db.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/aoue_writesql/src/main/resources" />
-    <property name="project.structure.last.edited" value="模块" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_writesql\src\main\resources" />
-      <recent name="D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_producer\src\main\resources" />
-    </key>
-  </component>
-  <component name="RunManager" selected="应用程序.SumAmountAnalysisData">
-    <configuration name="Bootstrap (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.aoue.producer.Bootstrap" />
-      <module name="aoue_producer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nd.aoue.producer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Bootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.aoue.consumer.Bootstrap" />
-      <module name="aoue_consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nd.aoue.consumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.aoue_web中的所有">
     <configuration name="SumAmountAnalysisData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nd.aoue.analyzer.SumAmountAnalysisData" />
       <module name="aoue_analyzer" />
@@ -120,11 +45,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="aoue_web中的所有" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoue_web" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.aoue_web中的所有" />
         <item itemvalue="应用程序.SumAmountAnalysisData" />
-        <item itemvalue="应用程序.Bootstrap" />
-        <item itemvalue="应用程序.Bootstrap (1)" />
       </list>
     </recent_temporary>
   </component>

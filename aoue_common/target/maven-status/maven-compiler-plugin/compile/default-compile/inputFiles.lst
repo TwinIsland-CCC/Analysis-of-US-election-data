@@ -1,5 +1,6 @@
 D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_common\src\main\java\com\nd\aoue\common\constant\ValueConstant.java
 D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_common\src\main\java\com\nd\aoue\common\util\DateUtil.java
+D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_common\src\main\java\com\nd\aoue\common\constant\Parties.java
 D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_common\src\main\java\com\nd\aoue\common\bean\Data.java
 D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_common\src\main\java\com\nd\aoue\common\bean\DataOut.java
 D:\JavaRepos\Maven\Analysis-of-US-election-data\aoue_common\src\main\java\com\nd\aoue\common\util\CSVUtil.java
