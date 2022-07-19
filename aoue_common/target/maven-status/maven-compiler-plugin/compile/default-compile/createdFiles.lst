@@ -6,7 +6,9 @@ com\nd\aoue\common\bean\Val.class
 com\nd\aoue\common\constant\Names.class
 com\nd\aoue\common\bean\Data.class
 com\nd\aoue\common\bean\BaseHBaseDao.class
+com\nd\aoue\common\constant\Parties.class
 com\nd\aoue\common\util\CSVUtil.class
 com\nd\aoue\common\bean\DataOut.class
 com\nd\aoue\common\constant\ValueConstant.class
 com\nd\aoue\common\bean\Producer.class
+com\nd\aoue\common\util\JDBCUtil.class

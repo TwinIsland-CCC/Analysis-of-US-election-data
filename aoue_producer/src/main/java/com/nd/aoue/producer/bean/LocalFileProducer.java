@@ -40,7 +40,7 @@ public class LocalFileProducer implements Producer {
             ElectAllData inData = read.get(i++);  // 获取主叫电话
 
             //转换日期格式
-            System.out.println(inData.getContb_receipt_dt());
+            //System.out.println(inData.getContb_receipt_dt());
             String parsedDate = DateUtil.parse(inData.getContb_receipt_dt());
 
             ElectData outData =
@@ -52,17 +52,18 @@ public class LocalFileProducer implements Producer {
             //通话记录写出到文件中
             try {
                 out.write(outData);
-                System.out.println(outData);
+                System.out.println(i);
+                //System.out.println(outData);
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
             /*
-            try {
+/*            try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }
+            }*/
 
              */
         }
