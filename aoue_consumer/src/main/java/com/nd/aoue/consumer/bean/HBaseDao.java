@@ -28,16 +28,8 @@ public class HBaseDao extends BaseHBaseDao {
     public void insertData(String value) throws IOException {
         //将通话日志保存到HBase表中
 
-        String[] values = split(value);
-        String cand_nm=values[0].substring(1,values[0].length()-1);  // 候选人名字
-        String contbr_nm=values[1].substring(1,values[1].length()-1);  // 投票人名字
-        String contbr_st=values[2].substring(1,values[2].length()-1);  // 投票人所在州
-        String contbr_employer = values[3].substring(1,values[3].length()-1);  // 投票人的雇佣者
-        String contbr_occupation=values[4].substring(1,values[4].length()-1);  // 投票人职业
-        String contb_receipt_amt=values[5];  // 投票人捐赠金额
-        String contb_receipt_dt=values[6].substring(0,values[6].length()-1);  //  捐赠日期
         //1.获取通话日志数据
-/*        String[] values = split(value);
+        String[] values = split(value);
         String cand_nm=values[0].substring(1,values[0].length()-1);  // 候选人名字
         String contbr_nm=values[1].substring(1,values[1].length()-1);  // 投票人名字
         String contbr_st=values[2].substring(1,values[2].length()-1);  // 投票人所在州
@@ -68,7 +60,7 @@ public class HBaseDao extends BaseHBaseDao {
                       15623513131=>13131532651
             计算分区号:让分区号没有规律就可以,hashMap
     */
-        String rowKey=genRegionNum(contbr_nm,cand_nm)+"_"+contbr_nm+"_"
+        String rowKey=genRegionNum(contbr_nm,cand_nm)+"_"+cand_nm+"_"+contbr_nm+"_"
                 +contbr_st+"_"+contbr_occupation+"_"+contb_receipt_dt;
         Put put=new Put(Bytes.toBytes(rowKey));
         byte[] family=Bytes.toBytes(Names.CF_CAND.getValue());

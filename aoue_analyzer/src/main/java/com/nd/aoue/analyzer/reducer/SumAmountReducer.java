@@ -15,7 +15,7 @@ public class SumAmountReducer extends Reducer<Text, Text,Text,Text> {
         //统计总捐款金额
         int sumAmount=0;
         for (Text value : values) {
-            int amount=Integer.parseInt(value.toString());
+            int amount=(int)Float.parseFloat(value.toString());
             sumAmount+=amount;
         }
         System.out.println(key + "_"
