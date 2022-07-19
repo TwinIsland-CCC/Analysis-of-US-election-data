@@ -14,6 +14,7 @@
         <module>aoue_consumer</module>
         <module>aoue_analyzer</module>
         <module>aoue_writesql</module>
+        <module>aoue_web</module>
     </modules>
 
     <properties>
