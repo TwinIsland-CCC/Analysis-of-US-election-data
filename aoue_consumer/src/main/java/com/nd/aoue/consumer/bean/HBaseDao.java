@@ -60,20 +60,21 @@ public class HBaseDao extends BaseHBaseDao {
                       15623513131=>13131532651
             计算分区号:让分区号没有规律就可以,hashMap
     */
-        String rowKey=genRegionNum(contbr_nm,cand_nm)+"_"+cand_nm+"_"+contbr_nm+"_"
-                +contbr_st+"_"+contbr_occupation+"_"+contb_receipt_dt;
-        Put put=new Put(Bytes.toBytes(rowKey));
-        byte[] family=Bytes.toBytes(Names.CF_CAND.getValue());
-        //增加列
-        put.addColumn(family,Bytes.toBytes("cand_nm"),Bytes.toBytes(cand_nm));
-        put.addColumn(family,Bytes.toBytes("contbr_nm"),Bytes.toBytes(contbr_nm));
-        put.addColumn(family,Bytes.toBytes("contbr_st"),Bytes.toBytes(contbr_st));
-        put.addColumn(family,Bytes.toBytes("contbr_employer"),Bytes.toBytes(contbr_employer));
-        put.addColumn(family,Bytes.toBytes("contbr_occupation"),Bytes.toBytes(contbr_occupation));
-        put.addColumn(family,Bytes.toBytes("contb_receipt_amt"),Bytes.toBytes(contb_receipt_amt));
-        put.addColumn(family,Bytes.toBytes("contb_receipt_dt"),Bytes.toBytes(contb_receipt_dt));
-        //3.保存数据
-        putData(Names.TABLE.getValue(),put);
-
+        if(Float.parseFloat(contb_receipt_amt)>0){
+            String rowKey=genRegionNum(contbr_nm,cand_nm)+"_"+cand_nm+"_"+contbr_nm+"_"
+                    +contbr_st+"_"+contbr_occupation+"_"+contb_receipt_dt;
+            Put put=new Put(Bytes.toBytes(rowKey));
+            byte[] family=Bytes.toBytes(Names.CF_CAND.getValue());
+            //增加列
+            put.addColumn(family,Bytes.toBytes("cand_nm"),Bytes.toBytes(cand_nm));
+            put.addColumn(family,Bytes.toBytes("contbr_nm"),Bytes.toBytes(contbr_nm));
+            put.addColumn(family,Bytes.toBytes("contbr_st"),Bytes.toBytes(contbr_st));
+            put.addColumn(family,Bytes.toBytes("contbr_employer"),Bytes.toBytes(contbr_employer));
+            put.addColumn(family,Bytes.toBytes("contbr_occupation"),Bytes.toBytes(contbr_occupation));
+            put.addColumn(family,Bytes.toBytes("contb_receipt_amt"),Bytes.toBytes(contb_receipt_amt));
+            put.addColumn(family,Bytes.toBytes("contb_receipt_dt"),Bytes.toBytes(contb_receipt_dt));
+            //3.保存数据
+            putData(Names.TABLE.getValue(),put);
+        }
     }
 }

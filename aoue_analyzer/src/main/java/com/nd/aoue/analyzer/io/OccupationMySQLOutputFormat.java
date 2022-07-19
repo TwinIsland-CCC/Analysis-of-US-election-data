@@ -13,8 +13,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class OccupationPartyMySQLOutputFormat extends OutputFormat<Text, Text> {
-    protected static class MySQLRecordWriter extends RecordWriter<Text,Text> {
+/**
+ * mysql格式化输出对象
+ */
+public class OccupationMySQLOutputFormat extends OutputFormat<Text,Text> {
+    protected static class MySQLRecordWriter extends RecordWriter<Text,Text>{
         private Connection connection=null;
         public MySQLRecordWriter(){
             //获取资源
@@ -32,17 +35,17 @@ public class OccupationPartyMySQLOutputFormat extends OutputFormat<Text, Text> {
             System.out.println("123");
             System.out.println(value);
             String[] values=value.toString().split("_");
-            String party = values[0];
-            String occupation = values[1];
-            int OccupationAmount = Integer.parseInt(values[2]);
+            String occupation = values[0];
+         //   String party = values[1];
+            int sumAmount = Integer.parseInt(values[1]);
             PreparedStatement ps=null;
-            //TODO 本组化 现在插入的是各职业对各党派的献金总额
+            //TODO 本组化 现在插入的是职业以及计算得出的总金额
             try {
-                String insertSQL="insert into occupation_party (party, occupation, amount) values (?, ?, ?);";
+                String insertSQL="insert into cand_occupation (cand_occuption, cand_amount) values (?, ?);";
                 ps = connection.prepareStatement(insertSQL);
-                ps.setString(1, party);
-                ps.setString(2, occupation);
-                ps.setInt(3, OccupationAmount);
+                ps.setString(1, occupation);
+               // ps.setString(2,party);
+                ps.setInt(2,sumAmount);
                 ps.executeUpdate();//这里会把数据输出到mysql中
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -76,7 +79,7 @@ public class OccupationPartyMySQLOutputFormat extends OutputFormat<Text, Text> {
     }
     @Override
     public RecordWriter<Text, Text> getRecordWriter(TaskAttemptContext context) throws IOException, InterruptedException {
-        return new OccupationPartyMySQLOutputFormat.MySQLRecordWriter();
+        return new MySQLRecordWriter();
     }
 
     @Override
