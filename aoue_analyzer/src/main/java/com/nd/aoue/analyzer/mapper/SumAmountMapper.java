@@ -58,7 +58,7 @@ public class SumAmountMapper extends TableMapper<Text,Text> {
 
 
         //TODO 本组化
-/*        context.write(new Text(call1+"_"+year),new Text(duration));//主叫年
+/*      context.write(new Text(call1+"_"+year),new Text(duration));//主叫年
         context.write(new Text(call1+"_"+month),new Text(duration));//主叫月
         context.write(new Text(call1+"_"+day),new Text(duration));//主叫日
 

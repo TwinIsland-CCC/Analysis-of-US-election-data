@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Analysis-of-US-election.iml" filepath="$PROJECT_DIR$/Analysis-of-US-election.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aoue_analyzer/aoue_analyzer.iml" filepath="$PROJECT_DIR$/aoue_analyzer/aoue_analyzer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aoue_common/aoue_common.iml" filepath="$PROJECT_DIR$/aoue_common/aoue_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aoue_consumer/aoue_consumer.iml" filepath="$PROJECT_DIR$/aoue_consumer/aoue_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aoue_producer/aoue_producer.iml" filepath="$PROJECT_DIR$/aoue_producer/aoue_producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aoue_web/aoue_web.iml" filepath="$PROJECT_DIR$/aoue_web/aoue_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aoue_writesql/aoue_writesql.iml" filepath="$PROJECT_DIR$/aoue_writesql/aoue_writesql.iml" />
+    </modules>
+  </component>
+</project>
