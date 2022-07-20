@@ -1,11 +1,8 @@
 package com.nd.aoue.analyzer.tools;
 
-import com.nd.aoue.analyzer.io.OccupationPartyMySQLOutputFormat;
-import com.nd.aoue.analyzer.io.StCandMySQLOutputFormat;
-import com.nd.aoue.analyzer.mapper.OccupationPartyMapper;
-import com.nd.aoue.analyzer.mapper.StCandMapper;
-import com.nd.aoue.analyzer.reducer.OccupationPartyReducer;
-import com.nd.aoue.analyzer.reducer.StCandReducer;
+import com.nd.aoue.analyzer.io.SupportMySQLOutputFormat;
+import com.nd.aoue.analyzer.mapper.SupportMapper;
+import com.nd.aoue.analyzer.reducer.SupportReducer;
 import com.nd.aoue.common.constant.Names;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.client.Scan;
@@ -16,13 +13,17 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.JobStatus;
 import org.apache.hadoop.util.Tool;
 
-public class StCandAnalysisTool implements Tool {
+
+/**
+ * 分析数据的工具类
+ */
+public class SupportTool implements Tool {
     @Override
     public int run(String[] args) throws Exception {
         //获取job
         Job job= Job.getInstance();
         //设置jar位置
-        job.setJarByClass(StCandAnalysisTool.class);
+        job.setJarByClass(SupportTool.class);
         //扫描主叫列族
         Scan scan=new Scan();
         //TODO 本组化
@@ -31,17 +32,17 @@ public class StCandAnalysisTool implements Tool {
         TableMapReduceUtil.initTableMapperJob(
                 Names.TABLE.getValue(),
                 scan,
-                StCandMapper.class,
+                SupportMapper.class,
                 Text.class,
                 Text.class,
                 job
         );
         //设置reducer
-        job.setReducerClass(StCandReducer.class);
+        job.setReducerClass(SupportReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         //设置输出
-        job.setOutputFormatClass(StCandMySQLOutputFormat.class);
+        job.setOutputFormatClass(SupportMySQLOutputFormat.class);
         //提交
         boolean flag = job.waitForCompletion(true);
         if(flag){
@@ -61,3 +62,6 @@ public class StCandAnalysisTool implements Tool {
         return null;
     }
 }
+
+
+

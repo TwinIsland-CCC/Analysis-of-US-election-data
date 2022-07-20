@@ -1,10 +1,10 @@
 package com.nd.aoue.analyzer;
 
-import com.nd.aoue.analyzer.tools.StCandAnalysisTool;
+import com.nd.aoue.analyzer.tools.SupportTool;
 import org.apache.hadoop.util.ToolRunner;
 
-public class StCandAnalysisData {
+public class SupportData {
     public static void main(String[] args) throws Exception {
-        ToolRunner.run(new StCandAnalysisTool(), args);
+        ToolRunner.run(new SupportTool(), args);
     }
 }
