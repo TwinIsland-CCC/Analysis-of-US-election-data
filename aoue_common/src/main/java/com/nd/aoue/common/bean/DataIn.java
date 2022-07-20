@@ -12,4 +12,6 @@ public interface DataIn extends Closeable {
     Object read() throws IOException;
     // return set
     <T extends Data> List<T> read(Class<T> tClass) throws IOException;
+
+    <T extends Data> List<T>  readPart(Class<T> tClass) throws IOException;
 }

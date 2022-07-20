@@ -1,6 +1,0 @@
-com\nd\aoue\producer\IO\LocalFileDataOut.class
-com\nd\aoue\producer\Bootstrap.class
-com\nd\aoue\producer\IO\LocalFileDataIn.class
-com\nd\aoue\producer\bean\ElectData.class
-com\nd\aoue\producer\bean\ElectAllData.class
-com\nd\aoue\producer\bean\LocalFileProducer.class
