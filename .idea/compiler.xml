@@ -14,5 +14,14 @@
         <module name="aoue_web" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="Analysis-of-US-election" target="1.8" />
+      <module name="aoue_analyzer" target="1.8" />
+      <module name="aoue_common" target="1.8" />
+      <module name="aoue_consumer" target="1.8" />
+      <module name="aoue_producer" target="1.8" />
+      <module name="aoue_web" target="1.8" />
+      <module name="aoue_writesql" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

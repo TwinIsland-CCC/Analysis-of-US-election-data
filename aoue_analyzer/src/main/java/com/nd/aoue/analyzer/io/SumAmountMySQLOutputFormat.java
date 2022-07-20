@@ -41,7 +41,7 @@ public class SumAmountMySQLOutputFormat extends OutputFormat<Text,Text> {
             PreparedStatement ps=null;
             //TODO 本组化 现在插入的是候选人信息以及计算得出的总金额
             try {
-                String insertSQL="insert into cand (cand_nm, cand_party, cand_amount) values (?, ?, ?);";
+                String insertSQL="insert into cand_sumamount (cand_nm, cand_party, cand_amount) values (?, ?, ?);";
                 ps = connection.prepareStatement(insertSQL);
                 ps.setString(1, name);
                 ps.setString(2,party);
