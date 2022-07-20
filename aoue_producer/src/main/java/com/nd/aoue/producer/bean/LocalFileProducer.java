@@ -42,7 +42,7 @@ public class LocalFileProducer implements Producer {
             //转换日期格式
             //System.out.println(inData.getContb_receipt_dt());
             String parsedDate = DateUtil.parse(inData.getContb_receipt_dt());
-
+            System.out.println(parsedDate);
             ElectData outData =
                     new ElectData(inData.getCand_nm(),
                     inData.getContbr_nm(), inData.getContbr_st(),
