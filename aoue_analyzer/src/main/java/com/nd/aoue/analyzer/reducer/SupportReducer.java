@@ -20,8 +20,8 @@ public class SupportReducer extends Reducer<Text, Text,Text,Text> {
         }
 
 
-        System.out.println(key + "_" + sumAmount);
+        System.out.println(key + "^" + sumAmount);
 
-        context.write(key,new Text(key + "_" + sumAmount));
+        context.write(key,new Text(key + "^" + sumAmount));
     }
 }

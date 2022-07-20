@@ -35,26 +35,33 @@ public class DataConsumer implements Consumer {
         while (true){
             //System.out.println("receiving……");
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
+            Integer i = 0;
             for (ConsumerRecord<String, String> r: records) {
                 System.out.println(r.value());
                 //存储数据到HBase中
-                hBaseDao.insertData(r.value());
+                hBaseDao.insertData(r.value(),i);
+                i++;
             }
         }
 
+
+/*
         // 文件读入（调试用）
-/*        while(true){
-            String filePath = "D:\\JavaRepos\\Maven\\Analysis-of-US-election-data\\data\\data_out.csv";
-            File file=new File(filePath);
-            InputStreamReader in_stream = new InputStreamReader(new FileInputStream(file));
-            BufferedReader in = new BufferedReader(in_stream);
-            String s;
-            while ((s=in.readLine())!=null) {
-                System.out.println(s);
-                hBaseDao.insertData(s);
-            }
-        }*/
+        String filePath = "D:\\hadoop\\Analysis-of-US-election-data\\data\\data_out1.csv";
+        File file=new File(filePath);
+        InputStreamReader in_stream = new InputStreamReader(new FileInputStream(file));
+        BufferedReader in = new BufferedReader(in_stream);
+        String s;
+        Integer i = 0;
+        while ((s=in.readLine())!=null) {
+            hBaseDao.insertData(s,i);
+            i++;
+        }
+        System.out.println("complete");
+ */
     }
+
+
 
     /**
      * 释放资源

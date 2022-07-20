@@ -38,7 +38,7 @@ public class StCandMapper extends TableMapper<Text, Text> {
 
         System.out.println(cand_nm);
 
-        String k = contb_receipt_dt + "_" + contbr_st +  "_" + cand_nm;
+        String k = contb_receipt_dt + "^" + contbr_st +  "^" + cand_nm;
 
         //将数据写给reducer
         context.write(new Text(k), new Text(contb_receipt_amt));

@@ -22,8 +22,8 @@ public class Bootstrap {
         // 构建生产者对象
         Producer producer = new LocalFileProducer();
         //人工
-        //producer.setIn(new LocalFileDataIn("D:\\JavaRepos\\Maven\\Analysis-of-US-election-data\\data\\P00000001-ALL.csv"));
-        //producer.setOut(new LocalFileDataOut("D:\\JavaRepos\\Maven\\Analysis-of-US-election-data\\data\\data_out.csv"));
+        //producer.setIn(new LocalFileDataIn("D:\\hadoop\\nku\\新建文件夹\\data1.csv"));
+        //producer.setOut(new LocalFileDataOut("D:\\hadoop\\Analysis-of-US-election-data\\data\\data_out1.csv"));
 
         //集群
         producer.setIn(new LocalFileDataIn(args[0]));

@@ -23,8 +23,6 @@ public class SupportMapper extends TableMapper<Text,Text> {
             throws IOException, InterruptedException {
 
         String rowKey= Bytes.toString(key.get());
-        System.out.println(rowKey);
-        //String[] values = rowKey.split("_");
 
         //获取HBase表中的数据
         String cand_nm = Bytes.toString(value.getValue(
@@ -40,10 +38,8 @@ public class SupportMapper extends TableMapper<Text,Text> {
                 Bytes.toBytes("cand"),
                 Bytes.toBytes("contb_receipt_dt")));
 
-
-        System.out.println(cand_nm);
         String party = Parties.getParty(String.valueOf(cand_nm));
-        String k =cand_nm+ "_"+contb_receipt_dt + "_" + party;
+        String k =cand_nm+ "^"+contb_receipt_dt + "^" + party;
         //将数据写给reducer
         context.write(new Text(k),new Text(contbr_nm));//写给它的是总人数
 

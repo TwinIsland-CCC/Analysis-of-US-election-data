@@ -18,12 +18,12 @@ public class SumAmountReducer extends Reducer<Text, Text,Text,Text> {
             int amount=(int)Float.parseFloat(value.toString());
             sumAmount+=amount;
         }
-        System.out.println(key + "_"
-                + Parties.getParty(String.valueOf(key)) + "_"
+        System.out.println(key + "^"
+                + Parties.getParty(String.valueOf(key)) + "^"
                 + sumAmount);
 
-        context.write(key,new Text(key + "_"
-                + Parties.getParty(String.valueOf(key)) + "_"
+        context.write(key,new Text(key + "^"
+                + Parties.getParty(String.valueOf(key)) + "^"
                 + sumAmount));
     }
 }

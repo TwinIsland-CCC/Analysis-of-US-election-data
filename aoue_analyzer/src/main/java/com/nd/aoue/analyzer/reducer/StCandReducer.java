@@ -14,8 +14,8 @@ public class StCandReducer extends Reducer<Text, Text, Text, Text> {
             int amount=(int)Float.parseFloat(value.toString());
             StCandAmount+=amount;
         }
-        System.out.println(key + "_" + StCandAmount);
+        System.out.println(key + "^" + StCandAmount);
 
-        context.write(key,new Text(key + "_" + StCandAmount));
+        context.write(key,new Text(key + "^" + StCandAmount));
     }
 }

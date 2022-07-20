@@ -25,7 +25,7 @@ public class HBaseDao extends BaseHBaseDao {
         end();  // 结束
     }
 
-    public void insertData(String value) throws IOException {
+    public void insertData(String value, Integer i) throws IOException {
         //将生产者生产的数据保存到HBase表中
 
         //1.获取数据
@@ -62,7 +62,7 @@ public class HBaseDao extends BaseHBaseDao {
     */
         if(Float.parseFloat(contb_receipt_amt)>0){
             String rowKey=genRegionNum(contbr_nm,cand_nm)+"_"+cand_nm+"_"+contbr_nm+"_"
-                    +contbr_st+"_"+contbr_occupation+"_"+contb_receipt_dt;
+                    +contbr_st+"_"+contbr_occupation+"_"+contb_receipt_dt+"_"+i;
             Put put=new Put(Bytes.toBytes(rowKey));
             byte[] family=Bytes.toBytes(Names.CF_CAND.getValue());
             //增加列
@@ -75,6 +75,7 @@ public class HBaseDao extends BaseHBaseDao {
             put.addColumn(family,Bytes.toBytes("contb_receipt_dt"),Bytes.toBytes(contb_receipt_dt));
             //3.保存数据
             putData(Names.TABLE.getValue(),put);
+            System.out.println(rowKey);
         }
     }
 }

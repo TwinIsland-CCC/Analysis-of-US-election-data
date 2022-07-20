@@ -31,7 +31,7 @@ public class OccupationPartyMySQLOutputFormat extends OutputFormat<Text, Text> {
         public void write(Text key, Text value) throws IOException, InterruptedException {
             System.out.println("123");
             System.out.println(value);
-            String[] values=value.toString().split("_");
+            String[] values=value.toString().split("\\^");
             String party = values[0];
             String occupation = values[1];
             int OccupationAmount = Integer.parseInt(values[2]);

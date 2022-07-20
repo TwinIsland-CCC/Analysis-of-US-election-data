@@ -34,7 +34,7 @@ public class SupportMySQLOutputFormat extends OutputFormat<Text,Text> {
         public void write(Text key, Text value) throws IOException, InterruptedException {
             System.out.println("123");
             System.out.println(value);
-            String[] values=value.toString().split("_");
+            String[] values=value.toString().split("\\^");
             String name = values[0];
             String date=values[1];
             String party = values[2];
