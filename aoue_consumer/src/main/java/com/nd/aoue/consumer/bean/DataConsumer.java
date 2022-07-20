@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.Properties;
 
 //消费通话记录数据类
-public class CallLogConsumer implements Consumer {
+public class DataConsumer implements Consumer {
     /**
      * 消费数据
      * @throws IOException
@@ -32,18 +32,6 @@ public class CallLogConsumer implements Consumer {
         //initial
         hBaseDao.init();
 
-        //消费数据
-/*        String filePath = "D:\\hadoop\\Analysis-of-US-election-data\\data\\data_out1.csv";//data_out1是万条数据
-        File file=new File(filePath);
-        InputStreamReader in_stream = new InputStreamReader(new FileInputStream(file));
-        BufferedReader in = new BufferedReader(in_stream);
-        String s;
-        while ((s=in.readLine())!=null ) {
-            //System.out.println(s);
-            hBaseDao.insertData(s);
-        }*/
-
-
         while (true){
             //System.out.println("receiving……");
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
@@ -54,16 +42,6 @@ public class CallLogConsumer implements Consumer {
             }
         }
 
-
-        //System.out.println("Complete");
-        //while(true) {
-            //ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
-            //for (ConsumerRecord<String, String> record : records) {
-            //System.out.println(record.value());
-            //存储数据
-            //hBaseDao.insertData(record.value());
-            //}
-        //}
         // 文件读入（调试用）
 /*        while(true){
             String filePath = "D:\\JavaRepos\\Maven\\Analysis-of-US-election-data\\data\\data_out.csv";

@@ -26,9 +26,9 @@ public class HBaseDao extends BaseHBaseDao {
     }
 
     public void insertData(String value) throws IOException {
-        //将通话日志保存到HBase表中
+        //将生产者生产的数据保存到HBase表中
 
-        //1.获取通话日志数据
+        //1.获取数据
         String[] values = split(value);
         String cand_nm=values[0].substring(1,values[0].length()-1);  // 候选人名字
         String contbr_nm=values[1].substring(1,values[1].length()-1);  // 投票人名字

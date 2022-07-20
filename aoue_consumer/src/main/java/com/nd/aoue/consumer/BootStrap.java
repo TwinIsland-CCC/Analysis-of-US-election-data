@@ -1,7 +1,7 @@
 package com.nd.aoue.consumer;
 
 import com.nd.aoue.common.bean.Consumer;
-import com.nd.aoue.consumer.bean.CallLogConsumer;
+import com.nd.aoue.consumer.bean.DataConsumer;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ import java.io.IOException;
 public class BootStrap {
     public static void main(String[] args) throws IOException {
         //创建消费者
-        Consumer consumer = new CallLogConsumer();
+        Consumer consumer = new DataConsumer();
         //消费数据
         consumer.consume();
         //释放资源
