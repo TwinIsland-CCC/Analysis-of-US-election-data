@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="aoue_producer:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f1bb247-ed6e-4ea3-9738-a78cc3cf2528" name="变更" comment="文件同步">
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/StCandAnalysisData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/SupportData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/StCandMySQLOutputFormat$MySQLRecordWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/StCandMySQLOutputFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/SupportMySQLOutputFormat$MySQLRecordWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/SupportMySQLOutputFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/mapper/StCandMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/mapper/SupportMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/reducer/StCandReducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/reducer/SupportReducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/tools/StCandAnalysisTool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/tools/SupportTool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/Bootstrap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/IO/LocalFileDataIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/IO/LocalFileDataOut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/ElectAllData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/ElectData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/LocalFileProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/DataIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/DataIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/BootStrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/BootStrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/IO/LocalFileDataIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/bean/LocalFileProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_out.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_out.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/aoue_producer_jar/aoue_producer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/aoue_producer_jar/aoue_producer.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -394,13 +389,26 @@
       <recent name="com.nd.aoue.analyzer.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.BootStrap">
+  <component name="RunManager" selected="应用程序.Bootstrap">
     <configuration name="BootStrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nd.aoue.consumer.BootStrap" />
       <module name="aoue_consumer" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.nd.aoue.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.aoue.producer.Bootstrap" />
+      <module name="aoue_producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.aoue.producer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -447,6 +455,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.BootStrap" />
+        <item itemvalue="应用程序.Bootstrap" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -476,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658285065690</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="文件同步">
+      <created>1658285497556</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658285497556</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -580,11 +601,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/SumAmountMapper.java</url>
           <line>20</line>

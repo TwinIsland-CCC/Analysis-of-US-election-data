@@ -10,8 +10,7 @@ import java.io.IOException;
  * 使用kafka消费者获取flume类型数据
  * 将数据存储到HBase中
  */
-public class
-BootStrap {
+public class BootStrap {
     public static void main(String[] args) throws IOException {
         //创建消费者
         Consumer consumer = new CallLogConsumer();

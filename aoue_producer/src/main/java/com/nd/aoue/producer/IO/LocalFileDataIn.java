@@ -10,6 +10,7 @@ import java.util.List;
 
 public class LocalFileDataIn implements DataIn {
     private BufferedReader reader = null;  // 字符输入流
+
     public LocalFileDataIn(String s) {
         setPath(s);
     }
@@ -23,6 +24,33 @@ public class LocalFileDataIn implements DataIn {
     public Object read() throws IOException {
 
         return null;
+    }
+
+    /**
+     * 分批读入数据，防止炸内存
+     * @return
+     * @throws IOException
+     */
+    @Override
+    public <T extends Data> List<T> readPart(Class<T> tClass) throws IOException {
+        List<T> set = new ArrayList<>();
+        //从本地数据文件中读取数据
+        String line = null;
+        int i = 0;
+        int interval = 100;
+        while ((line = reader.readLine()) != null && i++ < interval){
+            try {
+                // get instance object
+                T t = tClass.newInstance();
+                // 把读取的数据放入实例
+                t.setValue(line);
+                // 把实例对象放入集合
+                set.add(t);
+            } catch (InstantiationException | IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }
+        return set;
     }
 
     /**

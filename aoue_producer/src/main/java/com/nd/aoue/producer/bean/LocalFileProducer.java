@@ -15,7 +15,7 @@ import java.util.Random;
 public class LocalFileProducer implements Producer {
     private DataIn in;
     private DataOut out;
-    private volatile boolean flg = true;  // 为增强线程可见性，添加volatile，线程共享
+    public static volatile boolean flg = true;  // 为增强线程可见性，添加volatile，线程共享
 
     @Override
     public void setIn(DataIn in) {
@@ -30,40 +30,30 @@ public class LocalFileProducer implements Producer {
     //生产数据
     @Override
     public void produce() throws IOException {
-        List<ElectAllData> read = in.read(ElectAllData.class);
-/*        for (Contact c : read){
-            System.out.println(c);
-        }*/
-
-        int i = 0;
-        while (i < read.size()) {
-            ElectAllData inData = read.get(i++);  // 获取主叫电话
-
-            //转换日期格式
-            //System.out.println(inData.getContb_receipt_dt());
-            String parsedDate = DateUtil.parse(inData.getContb_receipt_dt());
-            System.out.println(parsedDate);
-            ElectData outData =
-                    new ElectData(inData.getCand_nm(),
-                    inData.getContbr_nm(), inData.getContbr_st(),
-                    inData.getContbr_employer(), inData.getContbr_occupation(),
-                    inData.getContb_receipt_amt(), parsedDate);
-
-            //通话记录写出到文件中
-            try {
-                out.write(outData);
-                System.out.println(i);
-                //System.out.println(outData);
-            } catch (Exception e) {
-                e.printStackTrace();
+        List<ElectAllData> read = null;
+        while((read = in.readPart(ElectAllData.class)).size() != 0){
+            if(flg){
+                int i = 0;
+                while (i < read.size()) {
+                    ElectAllData inData = read.get(i++);  // 获取
+                    //转换日期格式
+                    String parsedDate = DateUtil.parse(inData.getContb_receipt_dt());
+                    //System.out.println(parsedDate);
+                    ElectData outData =
+                            new ElectData(inData.getCand_nm(),
+                                    inData.getContbr_nm(), inData.getContbr_st(),
+                                    inData.getContbr_employer(), inData.getContbr_occupation(),
+                                    inData.getContb_receipt_amt(), parsedDate);
+                    //写出到文件中
+                    try {
+                        out.write(outData);
+                        //System.out.println(i);
+                        System.out.println(outData);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
             }
-
-            /*
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }*/
         }
     }
 
