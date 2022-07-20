@@ -36,7 +36,7 @@ public class OccupationPartyMapper extends TableMapper<Text, Text> {
         System.out.println(cand_nm);
 
         String party = Parties.getParty(String.valueOf(cand_nm));
-        String k = party + "_" + contbr_occupation;
+        String k = party + "^" + contbr_occupation;
 
         //将数据写给reducer
         context.write(new Text(k),new Text(contb_receipt_amt));

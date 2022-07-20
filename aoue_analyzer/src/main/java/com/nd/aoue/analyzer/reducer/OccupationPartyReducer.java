@@ -15,8 +15,9 @@ public class OccupationPartyReducer extends Reducer<Text, Text, Text, Text> {
             int amount=(int)Float.parseFloat(value.toString());
             OccupationAmount+=amount;
         }
-        System.out.println(key + "_" + OccupationAmount);
+        System.out.println(key + "^" + OccupationAmount);
 
-        context.write(key,new Text(key + "_" + OccupationAmount));
+        context.write(key,new Text(key + "^" + OccupationAmount));
+
     }
 }
