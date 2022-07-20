@@ -1,6 +1,0 @@
-com\nd\aoue\analyzer\mapper\SumAmountMapper.class
-com\nd\aoue\analyzer\reducer\SumAmountReducer.class
-com\nd\aoue\analyzer\io\SumAmountMySQLOutputFormat.class
-com\nd\aoue\analyzer\tools\SumAmountAnalysisTool.class
-com\nd\aoue\analyzer\io\SumAmountMySQLOutputFormat$MySQLRecordWriter.class
-com\nd\aoue\analyzer\SumAmountAnalysisData.class
