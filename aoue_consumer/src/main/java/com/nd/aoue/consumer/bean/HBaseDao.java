@@ -37,13 +37,13 @@ public class HBaseDao extends BaseHBaseDao {
         if(values[3].length() != 0){
             contbr_employer = values[3].substring(1,values[3].length()-1);  // 投票人的雇佣者
         }else{
-            contbr_employer = "NULL";
+            contbr_employer = "NONE";
         }
         String contbr_occupation = new String();
         if(values[4].length() != 0){
             contbr_occupation=values[4].substring(1,values[4].length()-1);  // 投票人职业
         }else{
-            contbr_occupation="NULL";
+            contbr_occupation="NONE";
         }
         String contb_receipt_amt=values[5];  // 投票人捐赠金额
         String contb_receipt_dt=values[6].substring(0,values[6].length()-1);  //  捐赠日期
