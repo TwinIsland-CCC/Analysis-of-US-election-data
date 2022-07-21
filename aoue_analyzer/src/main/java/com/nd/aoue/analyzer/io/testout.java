@@ -29,7 +29,7 @@ public class testout extends OutputFormat<Text, Text> {
          */
         @Override
         public void write(Text key, Text value) throws IOException, InterruptedException {
-            System.out.println("123");
+            //System.out.println("123");
             System.out.println(value);
             String[] values=value.toString().split("\\^");
             String cand_nm = values[0];

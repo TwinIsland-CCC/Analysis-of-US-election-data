@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class JDBCUtil {
     private static final String driverManager="com.mysql.jdbc.Driver";
-    private static final String url="jdbc:mysql://hadoop101:3306/aoue?useUnicode=true&useSSL=false&characterEncoding=UTF-8&&serverTimezone=GMT%2B8";
+    private static final String url="jdbc:mysql://hadoop101:3306/aoue-analysis?useUnicode=true&useSSL=false&characterEncoding=UTF-8&&serverTimezone=GMT%2B8";
     private static final String username="root";
     private static final String password="root";
 

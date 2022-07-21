@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: commons-configuration:commons-configuration:1.6">
     <CLASSES>
-      <root url="jar://E:/mymean/java/maven/rep/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar!/" />
+      <root url="jar://C:/apache-maven-3.6.1/rep/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://E:/mymean/java/maven/rep/commons-configuration/commons-configuration/1.6/commons-configuration-1.6-javadoc.jar!/" />
+      <root url="jar://C:/apache-maven-3.6.1/rep/commons-configuration/commons-configuration/1.6/commons-configuration-1.6-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://E:/mymean/java/maven/rep/commons-configuration/commons-configuration/1.6/commons-configuration-1.6-sources.jar!/" />
+      <root url="jar://C:/apache-maven-3.6.1/rep/commons-configuration/commons-configuration/1.6/commons-configuration-1.6-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

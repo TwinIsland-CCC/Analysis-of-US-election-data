@@ -4,16 +4,33 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.nd.dao.ContLogDao">
-    <!-- 查询 -->
+    <!-- 查询献金日志 -->
     <select id="findContLog" resultType="ContLog">
-        select a.date,a.state,a.candidate,a.money
-        from aoue_test a
+        select a.dt,a.state,a.candidate,a.money
+        from st_cand a
         where a.candidate=#{candidate}
-        and a.date=#{contDate}
-        <!--select a.date,a.candidate,sum(a.money) money
-        from aoue_test a
-        where a.candidate=#{candidate}
-        and a.date=#{contDate}
-        group by a.date,a.candidate-->
+        and a.dt=#{contDate}
+        order by a.money desc;
     </select>
+
+    <!-- 查询人数日志 -->
+    <select id="findContAmount" resultType="ContAmount">
+        select b.cand_nm,b.contb_date,b.cand_party,b.cand_amount
+        from cand_support b
+        where b.cand_nm=#{candidate}
+        and b.contb_date=#{contDate}
+    </select>
+
+    <!-- 各职业金额日志 -->
+    <select id="findOccuAmount" resultType="OccuAmountLog">
+        select *
+        from occupation_party
+    </select>
+
+    <!-- 各职业金额日志2 -->
+    <select id="findOccuAmount2" resultType="OccuAmountLog2">
+        select *
+        from occupation_party
+    </select>
+
 </mapper>

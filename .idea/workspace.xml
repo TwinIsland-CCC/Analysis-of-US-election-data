@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f1bb247-ed6e-4ea3-9738-a78cc3cf2528" name="变更" comment="解决生产者资源不足问题，改为分批读入数据">
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/testout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/testmapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/testreducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/testtool.java" afterDir="false" />
+    <list default="true" id="9f1bb247-ed6e-4ea3-9738-a78cc3cf2528" name="变更" comment="优化代码结构">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aoue_web/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_6.xml" afterDir="false" />
@@ -321,40 +320,103 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_8_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analysis-of-US-election.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Analysis-of-US-election.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_analyzer/aoue_analyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/aoue_analyzer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationMySQLOutputFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationMySQLOutputFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationPartyMySQLOutputFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationPartyMySQLOutputFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/StCandMySQLOutputFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/StCandMySQLOutputFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SumAmountMySQLOutputFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SumAmountMySQLOutputFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SupportMySQLOutputFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SupportMySQLOutputFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/OccupationPartyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/OccupationPartyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/StCandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/StCandMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/SupportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/SupportMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationPartyReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationPartyReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/StCandReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/StCandReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SumAmountReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SumAmountReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SupportReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SupportReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/testout.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/testout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/OccupationData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/OccupationPartyAnalysisData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/StCandAnalysisData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/SumAmountAnalysisData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/SupportData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/OccupationMySQLOutputFormat$MySQLRecordWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/OccupationMySQLOutputFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/OccupationPartyMySQLOutputFormat$MySQLRecordWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/OccupationPartyMySQLOutputFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/StCandMySQLOutputFormat$MySQLRecordWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/StCandMySQLOutputFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/SumAmountMySQLOutputFormat$MySQLRecordWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/SumAmountMySQLOutputFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/SupportMySQLOutputFormat$MySQLRecordWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/SupportMySQLOutputFormat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/testout$MySQLRecordWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/io/testout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/mapper/OccupationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/mapper/OccupationPartyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/mapper/StCandMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/mapper/SumAmountMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/mapper/SupportMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/mapper/testmapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/reducer/OccupationPartyReducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/reducer/OccupationReducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/reducer/StCandReducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/reducer/SumAmountReducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/reducer/SupportReducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/reducer/testreducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/tools/OccupationPartyAnalysisTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/tools/OccupationTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/tools/StCandAnalysisTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/tools/SumAmountAnalysisTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/tools/SupportTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_analyzer/target/classes/com/nd/aoue/analyzer/tools/testtool.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_common/aoue_common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/aoue_common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/JDBCUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/bean/BaseHBaseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/bean/Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/bean/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/bean/DataIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/bean/DataOut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/bean/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/bean/Val.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/constant/Names.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/constant/Parties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/constant/ValueConstant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/util/CSVUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/util/DateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/util/JDBCUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/com/nd/aoue/common/util/NumberUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/hbase-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_common/target/classes/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_consumer/aoue_consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/aoue_consumer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/BootStrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/BootStrap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/DataConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/DataConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_consumer/target/classes/META-INF/aoue_consumer.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_consumer/target/classes/com/nd/aoue/consumer/BootStrap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_consumer/target/classes/com/nd/aoue/consumer/bean/DataConsumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_consumer/target/classes/com/nd/aoue/consumer/bean/HBaseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_consumer/target/classes/consumer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_consumer/target/classes/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_producer/aoue_producer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/aoue_producer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/Bootstrap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/IO/LocalFileDataIn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/IO/LocalFileDataOut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/ElectAllData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/ElectData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/com/nd/aoue/producer/bean/LocalFileProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_producer/target/classes/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_web/aoue_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/aoue_web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/java/com/nd/controller/ContLogContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/java/com/nd/controller/ContLogContoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/java/com/nd/dao/ContLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/java/com/nd/dao/ContLogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/java/com/nd/entity/ContLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/java/com/nd/entity/ContLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/java/com/nd/service/ContLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/java/com/nd/service/ContLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/java/com/nd/service/impl/ContLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/java/com/nd/service/impl/ContLogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/resources/mapper/ContLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/resources/mapper/ContLogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/webapp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/webapp/query.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/webapp/query.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/webapp/resource/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/webapp/resource/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aoue_web/src/main/webapp/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_web/src/main/webapp/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aoue_writesql/aoue_writesql.iml" beforeDir="false" afterPath="$PROJECT_DIR$/aoue_writesql/aoue_writesql.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/classes/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/aoue_consumer/target/" />
-    <ignored path="$PROJECT_DIR$/aoue_producer/target/" />
-    <ignored path="$PROJECT_DIR$/aoue_analyzer/target/" />
-    <ignored path="$PROJECT_DIR$/aoue_writesql/target/" />
-    <ignored path="$PROJECT_DIR$/aoue_common/target/" />
-    <ignored path="$PROJECT_DIR$/aoue_web/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -362,9 +424,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -375,6 +434,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -389,30 +456,15 @@
         <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/OccupationCandMapper.java" />
         <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationCandMySQLOutputFormat.java" />
         <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/OccupationPartyAnalysisTool.java" />
-        <option value="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/JDBCUtil.java" />
-        <option value="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/data_consumer.java" />
-        <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/BootStrap.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SupportMySQLOutputFormat.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/SupportMapper.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SupportReducer.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SumAmountReducer.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SumAmountMySQLOutputFormat.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/StCandReducer.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/StCandMapper.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/StCandMySQLOutputFormat.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationPartyMySQLOutputFormat.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationReducer.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationMySQLOutputFormat.java" />
-        <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationPartyReducer.java" />
         <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/OccupationPartyMapper.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/test.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/testtool.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/testmapper.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/testreducer.java" />
-        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/testout.java" />
-        <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/DataConsumer.java" />
-        <option value="$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/JDBCUtil.java" />
+        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SumAmountMySQLOutputFormat.java" />
+        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SumAmountReducer.java" />
+        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationPartyReducer.java" />
+        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationPartyMySQLOutputFormat.java" />
+        <option value="$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/data_consumer.java" />
+        <option value="$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java" />
+        <option value="$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationReducer.java" />
       </list>
     </option>
   </component>
@@ -422,18 +474,16 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\mymean\java\maven\rep" />
-        <option name="mavenHome" value="D:/soft/apache-maven-3.6.1/apache-maven-3.6.1" />
-        <option name="userSettingsFile" value="D:\soft\apache-maven-3.6.1\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="localRepository" value="C:\apache-maven-3.6.1\rep" />
+        <option name="mavenHome" value="C:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="C:\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -471,10 +521,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-14" />
-    <option name="y" value="-14" />
-    <option name="width" value="1204" />
-    <option name="height" value="1028" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1200" />
+    <option name="height" value="1024" />
   </component>
   <component name="ProjectId" id="2CAIX0n9YbNIMyjZoiXXt5DMcYU" />
   <component name="ProjectLevelVcsManager">
@@ -485,7 +535,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -681,51 +730,6 @@
             <path>
               <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
               <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
-              <item name="aoue_producer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
-              <item name="aoue_producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
-              <item name="aoue_producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
-              <item name="aoue_producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
-              <item name="aoue_producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="producer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
-              <item name="aoue_producer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="producer" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Analysis-of-US-election" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Analysis-of-US-election-data" type="462c0819:PsiDirectoryNode" />
               <item name="aoue_writesql" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -768,63 +772,44 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.17819461" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "SQL 插入",
+    "last_opened_file_path": "D:/JavaRepos/Maven/Analysis-of-US-election-data/aoue_web/aoue_web/src/main/webapp",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.nd.aoue.analyzer.mapper" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="应用程序.BootStrap">
     <configuration name="BootStrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nd.aoue.consumer.BootStrap" />
       <module name="aoue_consumer" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.nd.aoue.consumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OccupationData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.aoue.analyzer.OccupationData" />
-      <module name="aoue_analyzer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nd.aoue.analyzer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -858,8 +843,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nd.aoue.analyzer.test" />
+    <configuration name="SumAmountAnalysisData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.aoue.analyzer.SumAmountAnalysisData" />
+      <module name="aoue_analyzer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nd.aoue.analyzer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nd.aoue.analyzer.SupportData" />
       <module name="aoue_analyzer" />
       <extension name="coverage">
         <pattern>
@@ -873,15 +871,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.OccupationPartyAnalysisData" />
-        <item itemvalue="Application.BootStrap" />
-        <item itemvalue="Application.OccupationData" />
-        <item itemvalue="Application.StCandAnalysisData" />
+        <item itemvalue="应用程序.BootStrap" />
+        <item itemvalue="应用程序.SupportData" />
+        <item itemvalue="应用程序.SumAmountAnalysisData" />
+        <item itemvalue="应用程序.StCandAnalysisData" />
+        <item itemvalue="应用程序.OccupationPartyAnalysisData" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -894,9 +892,9 @@
       <updated>1658217335662</updated>
       <workItem from="1658217338180" duration="13438000" />
       <workItem from="1658232824278" duration="1583000" />
-      <workItem from="1658306640576" duration="420000" />
-      <workItem from="1658307092168" duration="42000" />
-      <workItem from="1658307393456" duration="7040000" />
+      <workItem from="1658299898775" duration="65000" />
+      <workItem from="1658299977386" duration="6000000" />
+      <workItem from="1658316219959" duration="30816000" />
     </task>
     <task id="LOCAL-00001" summary="文件同步">
       <created>1658284910814</created>
@@ -926,39 +924,37 @@
       <option name="project" value="LOCAL" />
       <updated>1658292873547</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="优化代码结构">
+      <created>1658293244915</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658293244915</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22523000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="15021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2322495" />
+      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22428666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32564843" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39913544" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299712" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
@@ -980,37 +976,52 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24950232" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.3299712" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.3299712" />
+      <window_info anchor="bottom" id="Debug" order="11" visible="true" weight="0.39913544" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" id="Maven" order="0" visible="true" weight="0.17120107" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="JSF" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="CDI" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="9" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="10" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="11" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
+            <State />
           </value>
         </entry>
       </map>
@@ -1019,13 +1030,204 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="文件同步" />
     <MESSAGE value="解决生产者资源不足问题，改为分批读入数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决生产者资源不足问题，改为分批读入数据" />
+    <MESSAGE value="优化代码结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化代码结构" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/SumAmountMapper.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationPartyMySQLOutputFormat.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hadoop/hadoop-common/3.1.3/hadoop-common-3.1.3.jar!/org/apache/hadoop/io/IntWritable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hadoop/hadoop-common/3.1.3/hadoop-common-3.1.3.jar!/org/apache/hadoop/io/serializer/WritableSerialization.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3.jar!/org/apache/hadoop/mapreduce/counters/FrameworkCounterGroup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="252" selection-start-line="252" selection-end-line="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3.jar!/org/apache/hadoop/mapred/Counters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="422" selection-start-line="422" selection-end-line="422" />
+          <folding>
+            <element signature="e#14800#14801#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/ClientScanner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="435" selection-start-line="435" selection-end-line="435" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-common/2.3.7/hbase-common-2.3.7.jar!/org/apache/hadoop/hbase/util/UnsafeAccess.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-common/2.3.7/hbase-common-2.3.7.jar!/org/apache/hadoop/hbase/util/Bytes.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="550" selection-start-line="550" selection-end-line="550" />
+          <folding>
+            <element signature="e#17306#17307#0" expanded="true" />
+            <element signature="e#52333#52334#0" expanded="true" />
+            <element signature="e#52407#52408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-common/2.3.7/hbase-common-2.3.7.jar!/org/apache/hadoop/hbase/KeyValue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="575" selection-start-line="575" selection-end-line="575" />
+          <folding>
+            <element signature="e#25249#25250#0" expanded="true" />
+            <element signature="e#25287#25288#0" expanded="true" />
+            <element signature="e#25882#25883#0" expanded="true" />
+            <element signature="e#25915#25916#0" expanded="true" />
+            <element signature="e#25987#25988#0" expanded="true" />
+            <element signature="e#26022#26023#0" expanded="true" />
+            <element signature="e#26091#26092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-common/2.3.7/hbase-common-2.3.7.jar!/org/apache/hadoop/hbase/CellUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-client/2.3.7/hbase-client-2.3.7.jar!/org/apache/hadoop/hbase/client/Result.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="e#14919#14920#0" expanded="true" />
+            <element signature="e#14984#14985#0" expanded="true" />
+            <element signature="e#20222#20223#0" expanded="true" />
+            <element signature="e#20255#20256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-mapreduce/2.3.7/hbase-mapreduce-2.3.7.jar!/org/apache/hadoop/hbase/mapreduce/TableRecordReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-mapreduce/2.3.7/hbase-mapreduce-2.3.7.jar!/org/apache/hadoop/hbase/mapreduce/TableInputFormatBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3.jar!/org/apache/hadoop/mapreduce/task/MapContextImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3.jar!/org/apache/hadoop/mapreduce/lib/map/WrappedMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-mapreduce/2.3.7/hbase-mapreduce-2.3.7.jar!/org/apache/hadoop/hbase/mapreduce/TableRecordReaderImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hbase/hbase-common/2.3.7/hbase-common-2.3.7.jar!/org/apache/hadoop/hbase/io/ImmutableBytesWritable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#1556#1557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mymean/java/maven/rep/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3.jar!/org/apache/hadoop/mapreduce/Mapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://E:/mymean/java/maven/rep/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.3/hadoop-mapreduce-client-core-3.1.3.jar!/org/apache/hadoop/mapred/MapTask.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/JDBCUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/OccupationPartyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/SumAmountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="56" column="67" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -1092,11 +1294,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/panduanyichang.java" />
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/OccupationPartyAnalysisData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/SumAmountAnalysisData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/SumAmountAnalysisTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/OccupationPartyAnalysisTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/panduanyichang.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/DateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/CSVUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1107,8 +1359,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/data_consumer.java" />
-    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java" />
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationPartyReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/constant/data_consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SumAmountMySQLOutputFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SumAmountReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/CallLogConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-118">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/BootStrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/OccupationTool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-641">
@@ -1116,97 +1418,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/JDBCUtil.java">
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        <state relative-caret-position="154">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/SupportMapper.java">
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/OccupationMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        <state relative-caret-position="-845">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/SupportTool.java">
+    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationPartyMySQLOutputFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/SupportData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/SumAmountAnalysisTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SupportMySQLOutputFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/SumAmountMySQLOutputFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/SumAmountAnalysisData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="22">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/StCandMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/StCandAnalysisData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/StCandMySQLOutputFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationMySQLOutputFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/OccupationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="-1095">
+          <caret line="43" column="61" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -1214,183 +1453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/util/CSVUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_common/src/main/java/com/nd/aoue/common/bean/BaseHBaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-537">
-          <caret line="208" column="53" selection-start-line="208" selection-start-column="53" selection-end-line="208" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SupportReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/StCandReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/SumAmountReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/OccupationPartyAnalysisData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/OccupationPartyAnalysisTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="20" column="17" selection-end-line="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/OccupationPartyReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="20" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/OccupationPartyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" lean-forward="true" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/SumAmountMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="36" column="45" selection-start-line="31" selection-start-column="8" selection-end-line="36" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/OccupationPartyMySQLOutputFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/DataConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/bean/HBaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_producer/src/main/java/com/nd/aoue/producer/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_consumer/src/main/java/com/nd/aoue/consumer/BootStrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/reducer/testreducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/mapper/testmapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="45" column="85" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/io/testout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="42" column="100" lean-forward="true" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aoue_analyzer/src/main/java/com/nd/aoue/analyzer/tools/testtool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-770">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1450,6 +1512,7 @@
             <option name="proportions">
               <list>
                 <option value="0.17819461" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

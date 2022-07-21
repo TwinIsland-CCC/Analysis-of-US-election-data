@@ -31,7 +31,7 @@ public class DataConsumer implements Consumer {
         HBaseDao hBaseDao = new HBaseDao();
         //initial
         hBaseDao.init();
-
+        int j = 0;
         while (true){
             //System.out.println("receiving……");
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
@@ -42,6 +42,8 @@ public class DataConsumer implements Consumer {
                 hBaseDao.insertData(r.value(),i);
                 i++;
             }
+            //System.out.println(++j * 100 + " complete");
+            //System.out.println("next...");
         }
 
 

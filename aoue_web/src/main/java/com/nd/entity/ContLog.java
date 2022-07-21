@@ -2,8 +2,10 @@ package com.nd.entity;
 
 //献金实体类
 
-public class ContLog {
-    private String date;
+import java.io.Serializable;
+
+public class ContLog implements Serializable {
+    private String dt;
     private String state;
     private String candidate;
     private int money;
@@ -11,7 +13,7 @@ public class ContLog {
     @Override
     public String toString() {
         return "ContLog{" +
-                "date='" + date + '\'' +
+                "dt='" + dt + '\'' +
                 ", state='" + state + '\'' +
                 ", candidate='" + candidate + '\'' +
                 ", money='" + money + '\'' +
@@ -21,19 +23,19 @@ public class ContLog {
     public ContLog() {
     }
 
-    public ContLog(String date, String state, String candidate, int money) {
-        this.date = date;
+    public ContLog(String dt, String state, String candidate, int money) {
+        this.dt = dt;
         this.state = state;
         this.candidate = candidate;
         this.money = money;
     }
 
     public String getDate() {
-        return date;
+        return dt;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setDate(String dt) {
+        this.dt = dt;
     }
 
     public String getState() {

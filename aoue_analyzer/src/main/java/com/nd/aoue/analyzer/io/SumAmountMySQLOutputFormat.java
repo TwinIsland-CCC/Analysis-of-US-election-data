@@ -32,7 +32,7 @@ public class SumAmountMySQLOutputFormat extends OutputFormat<Text,Text> {
          */
         @Override
         public void write(Text key, Text value) throws IOException, InterruptedException {
-            System.out.println("123");
+            //System.out.println("123");
             System.out.println(value);
             String[] values=value.toString().split("\\^");
             String name = values[0];

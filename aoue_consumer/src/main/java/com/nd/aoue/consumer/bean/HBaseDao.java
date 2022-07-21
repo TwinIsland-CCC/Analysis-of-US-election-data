@@ -75,7 +75,7 @@ public class HBaseDao extends BaseHBaseDao {
             put.addColumn(family,Bytes.toBytes("contb_receipt_dt"),Bytes.toBytes(contb_receipt_dt));
             //3.保存数据
             putData(Names.TABLE.getValue(),put);
-            System.out.println(rowKey);
+            //System.out.println(rowKey);
         }
     }
 }
